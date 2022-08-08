@@ -1,0 +1,308 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Tue Aug  9 04:25:04 2022
+
+# Variables
+
+# environment
+hpv_master = root@59.110.155.34
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+NVM_IOJS_ORG_MIRROR = https://npm.taobao.org/mirrors/iojs
+# automatic
+?F = $(notdir $?)
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+old_txyun = ubuntu@129.204.193.196
+# environment
+BASH_SILENCE_DEPRECATION_WARNING = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# environment
+NVMW_NPM_MIRROR = https://npm.taobao.org/mirrors/npm
+# makefile
+CURDIR := /Users/liangzhu/Documents/work/w
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+ENABLE_FLUTTER_DESKTOP = true
+# environment
+tx = ubuntu@150.158.51.14
+# makefile
+MAKEFILE_LIST := 
+# environment
+GO111MODULE = on
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# environment
+NO_PROXY = localhost,127.0.0.1
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+GOPATH = /Users/liangzhu/go
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+ANDROID_HOME = /Users/liangzhu/Library/Android/sdk
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.dqy7BdyTn1/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/liangzhu/Documents/work/w
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+GOMODCACHE = /Users/liangzhu/go/pkg/mod
+# environment
+HOME = /Users/liangzhu
+# environment
+NVMW_NODEJS_ORG_MIRROR = https://npm.taobao.org/mirrors/node
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/liangzhu/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LOGNAME = liangzhu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/liangzhu/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = /usr/local/go/bin:/Users/liangzhu/.bun/bin:/Users/liangzhu/npm-global/bin:/Users/liangzhu/node_global/bin:../usr/local/bin:/usr/bin:/Users/liangzhu/.deno/bin:/Users/liangzhu/bin:/Library/PostgreSQL/13/bin:/Users/liangzhu/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/liangzhu/.cargo/bin:/Applications/source/flutter/bin:/Applications/source/.pub-cache/bin:/Users/liangzhu/bin:/Users/liangzhu/go/bin:/Library/Java/JavaVirtualMachines/zulu-jdk8/Contents/Home/bin:/usr/local/mysql/bin:/Users/liangzhu/Library/Android/sdk/tools:/Users/liangzhu/Library/Android/sdk/platform-tools:/Applications/source/work/mongo/mongodb-macos/bin
+# environment
+SHLVL = 1
+# environment
+googleIp_root_35_197_72_129 = root@35.197.72.129
+# environment
+CGO_FFLAGS = -g -O3
+# environment
+JAVA_HOME = /Library/Java/JavaVirtualMachines/zulu-jdk8/Contents/Home
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = liangzhu
+# makefile
+.DEFAULT_GOAL := 
+# environment
+GOROOT = /usr/local/go
+# environment
+IOJS_ORG_MIRROR = https://npm.taobao.org/mirrors/iojs
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+NODIST_IOJS_MIRROR = https://npm.taobao.org/mirrors/iojs
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/7s/7lfkw9q117q7cj9bfwgc7fjc0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+NODE_PATH = /usr/local/lib/node_modules
+# environment
+VSCODE_IPC_HOOK = /Users/liangzhu/Library/Application Support/Code/1.70.0-main.sock
+# environment
+MallocNanoZone = 0
+# environment
+BUN_INSTALL = /Users/liangzhu/.bun
+# environment
+ENABLE_WEB = true
+# environment
+JAVA_HOMECLASS_PATH = /Library/Java/JavaVirtualMachines/zulu-jdk8/Contents/Home/lib
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.61364389.61364395
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+DENO_INSTALL = /Users/liangzhu/.deno
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+https_proxy = http://127.0.0.1:7890
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+NVM_NODEJS_ORG_MIRROR = https://npm.taobao.org/mirrors/node
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+hpv_test = root@60.205.229.75
+# environment
+aliIp_root_120_79_150_132 = root@120.79.150.132
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+ALL_PROXY = socks5://127.0.0.1:7890
+# environment
+NVMW_IOJS_ORG_MIRROR = https://npm.taobao.org/mirrors/iojs
+# environment
+github = /Applications/source/work/github
+# environment
+http_proxy = http://127.0.0.1:7890
+# environment
+NODIST_NODE_MIRROR = https://npm.taobao.org/mirrors/node
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 61873
+# environment
+NODEJS_ORG_MIRROR = https://npm.taobao.org/mirrors/node
+# variable set hash-table stats:
+# Load=103/1024=10%, Rehash=0, Collisions=9/124=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777233, inode 73011708): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Finished Make data base on Tue Aug  9 04:25:04 2022
+
+ 

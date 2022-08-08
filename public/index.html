@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="browsermode" content="application" />
+    <meta name="x5-page-mode" content="app" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="manifest" href="/files/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/files/logo.svg" />
+    <link rel="stylesheet" href="/files/index.css" />
+    <title>WASM</title>
+    <meta name="google" content="notranslate" />
+    <script src="/files/js/wasm_exec.js"></script>
+    <!--        <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>-->
+    <!--        <script>-->
+    <!--            // VConsole will be exported to `window.VConsole` by default.-->
+    <!--            var vConsole = new window.VConsole();-->
+    <!--        </script>-->
+    <script>
+      function wasm_load(WASM_URL, callback) {
+        var go = new Go();
+        var opt = { headers: { "content-type": "application/wasm" } };
+        if ("instantiateStreaming" in WebAssembly) {
+          WebAssembly.instantiateStreaming(
+            fetch(WASM_URL, opt),
+            go.importObject
+          ).then(function (obj) {
+            wasm = obj.instance;
+            go.run(wasm);
+            if (callback) {
+              callback();
+            }
+          });
+        } else {
+          fetch(WASM_URL, opt)
+            .then((resp) => resp.arrayBuffer())
+            .then((bytes) =>
+              WebAssembly.instantiate(bytes, go.importObject).then(function (
+                obj
+              ) {
+                wasm = obj.instance;
+                go.run(wasm);
+                if (callback) {
+                  callback();
+                }
+              })
+            );
+        }
+      }
+
+      window.wasn_load = wasm_load;
+
+      wasm_load("/files/wasm/index.wasm");
+    </script>
+    <style>
+      #first-loading {
+        padding: 0px;
+        margin: 0px;
+        font-size: 60px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #55f;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first-loading">
+      <svg
+        width="1em"
+        height="1em"
+        viewBox="0 0 44 44"
+        xmlns="http://www.w3.org/2000/svg"
+        stroke="currentColor"
+      >
+        <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+            <animate
+              attributeName="r"
+              begin="0s"
+              dur="1.8s"
+              values="1; 20"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.165, 0.84, 0.44, 1"
+              repeatCount="indefinite"
+            ></animate>
+            <animate
+              attributeName="stroke-opacity"
+              begin="0s"
+              dur="1.8s"
+              values="1; 0"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.3, 0.61, 0.355, 1"
+              repeatCount="indefinite"
+            ></animate>
+          </circle>
+          <circle cx="22" cy="22" r="1">
+            <animate
+              attributeName="r"
+              begin="-0.9s"
+              dur="1.8s"
+              values="1; 20"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.165, 0.84, 0.44, 1"
+              repeatCount="indefinite"
+            ></animate>
+            <animate
+              attributeName="stroke-opacity"
+              begin="-0.9s"
+              dur="1.8s"
+              values="1; 0"
+              calcMode="spline"
+              keyTimes="0; 1"
+              keySplines="0.3, 0.61, 0.355, 1"
+              repeatCount="indefinite"
+            ></animate>
+          </circle>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
